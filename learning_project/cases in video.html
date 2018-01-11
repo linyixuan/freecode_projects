@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<style type="text/css">
+
+		#pcolor {
+			background-color: green;
+		}
+		.displayblock{
+			display: block;
+			width: 800px;
+			height: 200px;
+			background-color:pink;
+		}
+		.displayinline{
+			display:inline;
+			background-color:orchid;  
+		}
+		.displayinlineblock{
+			display:inline-block;
+			background-color:yellow;
+			width: 200px;
+			height: 200px;
+			vertical-align: middle; 
+		}
+		.content{
+			margin:auto;
+			background-color: pink;
+			width:200px;
+			height: 200px;
+		}
+		.nav ul{
+			text-align: center;
+			height: 30px;
+			line-height: 30px;
+			background-color: pink;
+		}
+		.nav li,a{
+			display: inline-block;
+			width: 80px;
+			height: 100%;
+		}
+		.nav li{
+			margin: 0 5px;
+			list-style: none;
+		}
+		.nav a,a:hover,li.cur a{
+			color:#fff;
+			text-decoration: none;
+		}
+		.nav a:hover, li.cur {
+			border-bottom:5px solid #c00;
+		}
+
+	</style>
+</head>
+<body style="background-color: transparent; background-image: url(img/about/1.jpg);background-repeat: no-repeat;background-attachment: fixed;background-position: center;">
+	<!-- initial color is transparent -->
+
+	<p>Hi weight 1</p>
+	<div class="displayblock">block:默认宽度是父元素宽度，可以设置宽高，换行显示</div>
+	<div class="displayinline">display:inline:默认宽度为内容宽度，不可以设置宽高，同行显示，行内可以换行
+	</div>
+	<br>
+	<span>before</span>
+	<span class="displayinlineblock">display:inline-block:默认宽度为内容宽度，可设置宽高，同行显示，整块换行</span>
+	<em>after</em>
+	<div style="display: none">display none</div>
+	<div style="">display none vs visibility:hidden</div>
+	<p>display:none 不显示，页面不留位置</p>
+	<p>visibility:hidden 不显示，页面留位置</p>
+	<div>
+		<div class="content">块级元素水平居中,margin:auto</div>
+	</div>
+	<div class="nav">
+		<ul>
+		<li><a href="#">nav 1</a></li>
+		<li><a href="">nav 2</a></li>
+		<li><a href="">nav 3</a></li>
+		<li><a href="">nav 4</a></li>
+		</ul>
+	</div>
+	
+	<p id="pcolor" >CSS weight 100</p>
+	<p>the ways of choosing color:</p>
+	<ol>
+		<li style="background-color:#FF0000;">
+			rgb #FF0000 red
+		</li>
+		<li style="background-color: rgb(255,255,0);">
+			rgb(255,255,0)
+		</li>
+		<li style="background-color: rgba(255,255,0,0.5);">
+			rgba(255,255,0,0.5)
+			a means the degree of transparent 50%
+		</li>
+	</ol>
+	<p style="background-color:rgba(255,0,255,0.2);">graph
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	</p>
+	<p style="color:white;">second graph</p>
+	<p style="text-indent: 2em;">display:block,inline,inline-block,none</p>
+	
+	<p>4</p>
+	<p>6</p>
+
+</body>
